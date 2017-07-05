@@ -1,0 +1,104 @@
+$brown:#a18e7c;
+// $brown-dark: #8e7b6b;
+$brown-dark: darken($brown,15%);
+
+
+body, html {
+    height: 100%;
+    margin: 0px !important;
+}
+
+/* The hero image */
+.hero-image {
+    /* The image used */
+    background-image: url("../assets/hero.jpg");
+
+    /* Set a specific height */
+    height: 800px;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0rem;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.btn-primary {
+    color: #fff;
+    background-color: $brown;
+    border-color: $brown;
+    outline: none;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: $brown-dark;
+    border-color: $brown-dark;
+    outline: none;
+}
+.btn-primary.focus, .btn-primary:focus {
+    -webkit-box-shadow: 0 0 0 2px $brown-dark;
+    box-shadow: 0 0 0 2px $brown-dark;
+    outline:0;
+}
+
+.side-menu{
+    top:0px;
+    left: 0px;
+    position: absolute;
+    height: 100%;
+    width: 20em;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+.back-drop{
+   position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.37);
+  z-index: 990;
+}
+
+.menu-trigger{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color:#fff;
+    z-index: 1;
+    & > i {
+        font-size: 2em;
+    }
+}
